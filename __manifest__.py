@@ -19,11 +19,11 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
         'views/services_view.xml',
         'views/doctors_view.xml',
         'views/patients_view.xml',
         'views/appointments_view.xml',
+        'views/views.xml',
         'security/ir.model.access.csv'
     ],
 
@@ -33,6 +33,10 @@
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
+    ],
+
+    'images': [
+        'static/description/icon.png'
     ],
 }
 

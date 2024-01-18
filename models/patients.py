@@ -7,8 +7,9 @@ class DentalPatient(models.Model):
     patient = fields.Many2one('res.partner', string="Patient", required=True)
     doctor = fields.Many2one('res.partner', string="Doctor")
     service = fields.Many2one('dental.service', string="Service")
-    emergency_number = fields.Char("Emergency Number", related='patient.phone')
+    emergency_number = fields.Char(related='patient.phone', string="Emergency Number", readonly=True)
     date_of_birth = fields.Date("Date of Birth")
+    image = fields.Binary(attachment=True)
     blood_type = fields.Selection([
         ('A', 'A'),
         ('B', 'B'),

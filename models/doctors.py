@@ -6,3 +6,4 @@ class DentalDoctor(models.Model):
 
     doctor = fields.Many2one('res.partner', string="Doctor", required=True)
     service_id = fields.Many2one('dental.service', string="Service")
+    image = fields.Binary(attachment=True)

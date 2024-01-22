@@ -71,6 +71,12 @@
         </field>
     </record>
 
+        <record model="ir.actions.act_window" id="dental__care.action_window_doctor">
+            <field name="name">Dental Care - Doctor</field>
+            <field name="res_model">dental.doctor</field>
+            <field name="view_mode">tree,kanban,form</field>
+        </record>
+        
         <menuitem name="Dokter" id="dental__care.menu1" parent="dental__care.menu_root" action="dental__care.action_window_doctor"/>
     </data>
 </odoo>
